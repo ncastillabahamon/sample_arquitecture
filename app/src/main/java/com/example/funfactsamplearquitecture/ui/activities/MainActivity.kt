@@ -42,8 +42,9 @@ fun SetupCardFacts(fact: String) {
         ) {
             Card(
                 modifier = Modifier
-
-                    .size(200.dp, 100.dp),
+                    .fillMaxWidth()
+                    .padding(start =16.dp, end = 16.dp )
+                    .height(100.dp),
                 shape = RoundedCornerShape(corner = CornerSize(10.dp))
             ) {
                 Text(text = "Hola mundo",)
