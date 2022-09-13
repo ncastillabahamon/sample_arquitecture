@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.funfactsamplearquitecture.ui.compose.SetupCardFacts
 import com.example.funfactsamplearquitecture.ui.theme.FunFactSampleArquitectureTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,39 +27,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun SetupCardFacts(fact: String) {
-    Box (
-        modifier = Modifier
-            .fillMaxSize()
-            .background(color = Color.Blue),
 
-    ){
-        Column(
-            modifier = Modifier
-                .fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
-        ) {
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start =16.dp, end = 16.dp )
-                    .height(100.dp),
-                shape = RoundedCornerShape(corner = CornerSize(10.dp))
-            ) {
-                Text(text = "Hola mundo",)
-            }
-            Button(
-                onClick = { Log.e("BTN","Si funciona")}
-            ) {
-                Text(text = "Refresh")
-            }
-
-        }
-
-    }
-}
 
 @Preview(showBackground = true)
 @Composable
