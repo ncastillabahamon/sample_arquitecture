@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FunFactSampleArquitecture"
 include ':app'
+include ':data'
+include ':domain'
+include ':data:networking'
+include ':data:local'
