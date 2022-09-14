@@ -5,7 +5,7 @@ import com.example.local.FunFactLocal
 import com.example.networking.FunFactNetworking
 
 
-class FunFactRepositoryImpl constructor(
+internal class FunFactRepositoryImpl constructor(
     private val funFactNetworking: FunFactNetworking,
     private val funFactLocal: FunFactLocal
 ) : FunFactRepository {

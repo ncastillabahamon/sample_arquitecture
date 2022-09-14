@@ -1,14 +1,12 @@
-package com.example.data
+package com.example.data.di
 
+import com.example.data.FunFactRepositoryImpl
 import com.example.domain.FunFactRepository
-import com.example.local.FunFactLocal
-import com.example.local.FunFactLocalImpl
-import com.example.networking.ApiFunFact
-import com.example.networking.FunFactNetworking
+import com.example.local.di.localModule
+import com.example.networking.di.networkingModule
 import org.koin.dsl.module
 
 val dataModule = module {
+    includes(localModule, networkingModule)
     factory <FunFactRepository> { FunFactRepositoryImpl(get(), get()) }
-    single<FunFactNetworking> { ApiFunFact() }
-    single<FunFactLocal> { FunFactLocalImpl() }
 }

@@ -1,7 +1,7 @@
 package com.example.funfactsamplearquitecture
 
 import android.app.Application
-import com.example.data.dataModule
+import com.example.data.di.dataModule
 import com.example.funfactsamplearquitecture.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

@@ -1,5 +1,5 @@
 package com.example.networking
 
-class ApiFunFact : FunFactNetworking {
+internal class ApiFunFact : FunFactNetworking {
     override fun getRandomFunFact(): String = "Fun Fact API"
 }
