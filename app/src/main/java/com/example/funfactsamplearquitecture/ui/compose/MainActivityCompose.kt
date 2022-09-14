@@ -14,10 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.funfactsamplearquitecture.ui.viewmodels.SomeViewModel
+import com.example.funfactsamplearquitecture.viewmodel.MainViewModel
 
 
 @Composable
-fun SetupCardFacts(factViewModel: SomeViewModel) {
+fun SetupCardFacts(factViewModel: MainViewModel) {
 
     Box (
         modifier = Modifier
