@@ -7,6 +7,21 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FunFactSampleArquitecture.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FunFactSampleArquitecture.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FunFactSampleArquitecture.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FunFactSampleArquitecture.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FunFactSampleArquitecture.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FunFactSampleArquitecture.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.iml" filepath="$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/local/FunFactSampleArquitecture.data.local.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.iml" filepath="$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/networking/FunFactSampleArquitecture.data.networking.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/FunFactSampleArquitecture.data.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/FunFactSampleArquitecture.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/FunFactSampleArquitecture.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/FunFactSampleArquitecture.domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/FunFactSampleArquitecture.domain.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/FunFactSampleArquitecture.domain.test.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/FunFactSampleArquitecture.domain.test.iml" />
     </modules>
   </component>
 </project>

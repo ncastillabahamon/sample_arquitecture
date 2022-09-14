@@ -3,20 +3,19 @@ package com.example.funfactsamplearquitecture.ui.activities
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.viewModels
-import androidx.compose.runtime.*
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.funfactsamplearquitecture.ui.compose.SetupCardFacts
-import com.example.funfactsamplearquitecture.ui.viewmodels.SomeViewModel
+import com.example.funfactsamplearquitecture.viewmodel.MainViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.activity.viewModels
 
 class MainActivity : ComponentActivity() {
 
-    private val theViewModel: SomeViewModel by viewModels()
+    private val mainViewModel by viewModel<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            SetupCardFacts(theViewModel)
+            SetupCardFacts(mainViewModel)
         }
     }
 }
