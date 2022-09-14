@@ -36,7 +36,7 @@ fun SetupCardFacts(fact: String) {
                 shape = RoundedCornerShape(corner = CornerSize(10.dp))
             ) {
                 Text(
-                    text = "Hola mundo, un mensaje muy largo para ver como de se a ve ",
+                    text = fact,
                     modifier = Modifier
                         .padding(8.dp)
                         .fillMaxWidth()
