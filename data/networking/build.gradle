@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+    implementation project(':domain')
     // Koin for Android
     implementation "io.insert-koin:koin-android:$koin_version"
     implementation 'androidx.core:core-ktx:1.7.0'

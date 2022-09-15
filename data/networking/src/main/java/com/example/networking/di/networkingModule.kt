@@ -1,7 +1,10 @@
 package com.example.networking.di
 
 import com.example.networking.BuildConfig
-import com.example.networking.temp.FunFactApi
+import com.example.networking.FunFactApi
+import com.example.networking.FunFactNetWorkingImp
+import com.example.networking.FunFactNetworking
+import com.example.networking.utils.ResponseHandler
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -13,6 +16,8 @@ val networkingModule = module {
     factory { provideFunFactApi(get()) }
     factory { provideLoggingInterceptor() }
     single { provideRetrofit(get()) }
+    factory <FunFactNetworking> { FunFactNetWorkingImp(get(), get()) }
+    factory { ResponseHandler() }
 }
 
 fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
