@@ -14,7 +14,7 @@ class FunFactRepositoryImpl constructor(
         return if (hasConnection) {
             val remoteFunFact = funFactNetworking.getRandomFunFact()
             return when (remoteFunFact.status) {
-                Status.SUCCESS -> remoteFunFact.data?.data?.fact.toString()
+                Status.SUCCESS -> remoteFunFact.data?.value?.fact.toString()
                 Status.ERROR -> remoteFunFact.message.toString()
                 Status.LOADING -> "Loading..."
             }
