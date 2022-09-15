@@ -36,7 +36,4 @@ class MainViewModel constructor(private val funFactRepository: FunFactRepository
         }
 
     }
-
-
-
 }
