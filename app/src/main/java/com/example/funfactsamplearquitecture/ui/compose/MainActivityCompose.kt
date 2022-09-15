@@ -12,10 +12,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.funfactsamplearquitecture.ui.viewmodels.SomeViewModel
 import com.example.funfactsamplearquitecture.viewmodel.MainViewModel
-
 
 @Composable
 fun SetupCardFacts(factViewModel: MainViewModel) {
@@ -46,15 +46,24 @@ fun SetupCardFacts(factViewModel: MainViewModel) {
                         .fillMaxWidth()
                 )
             }
+
+        }
+        Box(
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+
+        ) {
             Button(
                 onClick = {
                     Log.e("BTN","Si funciona")
                     factViewModel.changeFactFromServer()
-                }
-            ) {
+                },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 16.dp, end = 16.dp)
+            ){
                 Text(text = "Refresh")
             }
-
         }
 
     }
