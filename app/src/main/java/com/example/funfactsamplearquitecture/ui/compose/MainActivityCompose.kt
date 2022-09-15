@@ -77,7 +77,7 @@ fun SetupCardFacts(factViewModel: MainViewModel) {
 fun AnimationButton(changeFactFromServer: MainViewModel) {
 
     var isLoading by remember { mutableStateOf(false) }
-    val text = if (isLoading) "Loanding... press again :)" else "Refresh"
+    val text = if (isLoading) "From server" else "From cache "
 
     Button(
         onClick = {
