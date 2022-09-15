@@ -1,5 +1,7 @@
 package com.example.networking
 
+import com.example.networking.utils.Resource
+
 interface FunFactNetworking {
-    fun getRandomFunFact(): String
+   suspend fun getRandomFunFact(): Resource<FunFactEntity>
 }
