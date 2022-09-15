@@ -4,5 +4,5 @@ import retrofit2.http.GET
 
 interface FunFactApi {
     @GET("/")
-    suspend fun getRandomFunFact(): FunFactEntity
+    suspend fun getRandomFunFact(): FunFactResponse
 }

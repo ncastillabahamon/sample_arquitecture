@@ -7,7 +7,7 @@ internal class FunFactNetWorkingImp constructor(
     private val funFactApi: FunFactApi,
     private val responseHandler: ResponseHandler
 ) : FunFactNetworking {
-    override suspend fun getRandomFunFact(): Resource<FunFactEntity> {
+    override suspend fun getRandomFunFact(): Resource<FunFactResponse> {
         return try {
             val response =funFactApi.getRandomFunFact()
             responseHandler.handleSuccess(response)
