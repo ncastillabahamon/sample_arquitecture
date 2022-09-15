@@ -7,6 +7,8 @@ import com.example.funfactsamplearquitecture.ui.compose.SetupCardFacts
 import com.example.funfactsamplearquitecture.viewmodel.MainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import androidx.activity.viewModels
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
 
@@ -25,5 +27,5 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    SetupCardFacts(theViewModel)
+    SetupCardFacts(mainViewModel)
 }*/
