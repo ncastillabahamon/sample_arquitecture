@@ -1,5 +1,5 @@
 package com.example.local
 
 interface FunFactLocal {
-    fun getFunFact(): String
+    suspend fun getFunFact(): String
 }

@@ -6,22 +6,34 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
 import com.example.domain.FunFactRepository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainViewModel constructor(private val funFactRepository: FunFactRepository) : ViewModel() {
 
-    var fact by mutableStateOf(funFactRepository.getRandomFunFact(true))
+    var toggleConnection = false
+    var fact by mutableStateOf("")
+
+    init {
+        CoroutineScope(Dispatchers.IO).launch {
+            fact = funFactRepository.getRandomFunFact(true)
+        }
+    }
     var currentColor by mutableStateOf(Color.Blue)
     val colorsBackground = arrayOf(Color(0xFF9CCC65), Color.Magenta, Color.Yellow, Color.Red)
     var count = 0
 
-    fun changeFactFromServer(){
+    fun changeFactFromServer() {
+        CoroutineScope(Dispatchers.IO).launch {
+            fact = "${funFactRepository.getRandomFunFact(toggleConnection)} $count"
+            currentColor = colorsBackground[count]
+            count++
+            toggleConnection = !toggleConnection
 
-        fact = "${funFactRepository.getRandomFunFact(false)} $count"
-        currentColor = colorsBackground[count]
-        count++
-
-        if(count == colorsBackground.size)
-            count = 0
+            if (count == colorsBackground.size)
+                count = 0
+        }
 
     }
 
