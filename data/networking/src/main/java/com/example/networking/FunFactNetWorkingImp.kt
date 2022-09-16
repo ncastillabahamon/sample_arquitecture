@@ -3,7 +3,7 @@ package com.example.networking
 import com.example.networking.utils.Resource
 import com.example.networking.utils.ResponseHandler
 
-internal class FunFactNetWorkingImp constructor(
+class FunFactNetWorkingImp constructor(
     private val funFactApi: FunFactApi,
     private val responseHandler: ResponseHandler
 ) : FunFactNetworking {
